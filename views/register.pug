@@ -1,0 +1,15 @@
+extends layout
+
+
+block content
+  section.registerForm
+
+    form(action='/users' method='post')
+        div.input
+          input(type='text' id='username' name='username' placeholder='Neuer Benutzername').input
+
+        div.input
+          input(type='password' id='password' name='password' placeholder='Neues Benutzerpasswort').input
+
+
+    button(type='submit') Hier neu registrieren 🡆

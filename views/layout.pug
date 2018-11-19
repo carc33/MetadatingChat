@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet")
+    link(href="  https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='/scripts/click.js')
+
+  body
+    section.top
+      div.welcome-header
+        div.logo
+          a(href='/') meta.dating: botify!
+
+        div.linklist
+          div.login
+            a(href='/login').login login
+
+          div.register
+            a(href='/register').register register
+
+          div.admin
+            a(href='/admin').admin admin
+    block content

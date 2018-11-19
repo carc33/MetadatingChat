@@ -1,0 +1,13 @@
+extends layout
+
+
+block content
+  section.loginForm
+    form(action='/auth' method='post')
+      div.input
+        input(type='text' id='username' name='username' placeholder='Benutzername').input
+
+      div.input
+        input(type='password' id='password' name='password' placeholder='Passwort').input
+
+      button(type='submit') Login 🡆
